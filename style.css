@@ -1,6 +1,35 @@
 * {
   box-sizing: border-box;
 }
+
+/* ----------  NAVBAR: phone view  ---------- */
+@media only screen and (max-width: 991.98px) {
+
+  /* stack nav links vertically and centre them */
+  .myNavbar-nav {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* give each link some breathing room */
+  .myNavbar-nav .myNav-link {
+    padding: .4rem 0;
+  }
+
+  /* centre the form buttons under the links */
+  .myNavbar-collapse .myD-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+  }
+
+  /* remove the big left‑margin Bootstrap adds on mobile */
+  .myNavbar-nav {
+    margin-left: 0 !important;
+  }
+}
+
 .myheader {
   position: fixed;
   top: 0;
@@ -152,7 +181,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
-  justify-items: center;
+  justify-content: center;
 }
 .myCard {
   width: 100px;
@@ -172,14 +201,15 @@ hr {
  
 }
 .myColCard {
-  width: 310px;
+  width: 100%;
+  max-width: 340px;
   height: 320px;
   
 }
 .myColCard img {
-  width: 310px;
+  width: 100%;
   height: 155px;
-  box-sizing: border-box;
+  object-fit: cover;
 }
 .myText {
   font-size: 18px;
@@ -200,16 +230,19 @@ hr {
     
 }
 .myFooterCard{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 200px;
     background-color: transparent;
     border: 0 solid grey;
-    padding: 30px 0;
+    padding-top: 30px ;
+    padding-bottom: 0px;
 }
 .myFooterCard img{
     width: 300px;
     height: 200px;
-}
+    margin-bottom: 0px;
+    }
 .myFooterCardText{
     margin-top: 50px;
 }
@@ -219,17 +252,109 @@ hr {
 }
 
 .myFooterbutton{
-    width: 120px;
+    width: 110px;
     height: 40px;
     border: 0 solid black;
     border-radius: 5px;
     margin-top:70px ;
 }
 .myFooterbutton img{
-    width: 120px;
+    width: 110px;
     height: 40px;
     border: 0 solid black;
     border-radius: 5px;
    
     
 }
+/* second footer */
+
+.footer-sec{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 60px 0px;
+  
+}
+
+.categories, .trending, .about-us, .olx, .follow-us{
+  width: 200px;
+  height: auto;  
+  color: #002f34;
+  text-align: left;
+  
+}
+.categories p, .trending p, .about-us p, .olx p, .follow-us p{
+  margin: 10px 0px;
+  font-size: 16px;
+  
+}
+.categories h2, .trending h2, .about-us h2, .olx h2, .follow-us h2{
+  font-size: 16px;
+  font-weight: bold;
+  color: #002f34;
+  text-align: left;
+  margin: 20px 0px;
+}
+.follow-us i{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #002f34;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #002f34;
+  padding-top: 12px;
+  padding-left: 12px; 
+  margin-right: 5px;
+}
+.hr{
+  color: #002f34;
+ 
+}
+/* copy right */
+.myCopyRight{
+  background-color: #002f34;
+  color: #ffffff;
+  height: 60px;
+  padding: 20px 100px;
+}
+.myCopyRight h3{
+  text-align: end;
+  font-size: 17px;
+  
+}
+/* back to top */
+
+  
+
+.btt{
+  width: 160px;
+  height: 40px;
+  position: fixed;
+  right: 60px;
+  bottom: 100px;
+  background-color:#f2f4f5 ;
+   border: 1px solid #002f34;
+  border-radius: 40px;
+  z-index: 1;
+}
+.btt:hover {
+  border: 3px solid #002f34;
+  border-radius: 40px
+}
+.bi-caret-up{
+  margin-right: 10px;
+}
+@media only screen and (max-width:575.98px){   /* <576 px ≈ Bootstrap’s “xs” breakpoint */
+    .btt{
+        bottom:80px;           /* hug the bottom a bit closer           */
+        right:50%;             /* go to horizontal centre …             */
+        transform:translatex(45%); /* … and pull itself back by 50 %     */
+
+        width:auto;            /* shrink to content                     */
+        padding:0 22px;        /* extra padding so it still looks nice  */
+    }
+}
+
