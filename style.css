@@ -290,7 +290,7 @@ hr {
   font-size: 16px;
   
 }
-.categories h2, .trending h2, .about-us h2, .olx h2, .follow-us h2{
+.categories h4, .trending h4, .about-us h4, .olx h4, .follow-us h4{
   font-size: 16px;
   font-weight: bold;
   color: #002f34;
@@ -322,7 +322,7 @@ hr {
 }
 .myCopyRight h3{
   text-align: end;
-  font-size: 17px;
+  font-size: 18px;
   
 }
 /* back to top */
