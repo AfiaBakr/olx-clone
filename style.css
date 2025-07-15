@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+/* header */
+.myheader {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fffcfc;
+}
+.myColor {
+  background-color: #ebf1ff;
+}
+.myBrand {
+  background: #fff;
+  border: 0 solid #fff;
+  border-radius: 10px 10px 0px 0px; /*calc(var(--r)*2) calc(var(--r)*2) 0 0 /var(--r) */
+  padding: 12px;
+  margin-bottom: 0px;
+}
+.myLogin {
+  margin-right: 20px;
+  background-color: #ebf1ff;
+  color: rgb(117, 117, 117);
+  border: 0 solid #ebf1ff;
+  text-decoration: underline;
+}
+.myLogin:hover {
+  width: 80px;
+  height: 40px;
+  background-color: #d8e4ff;
+  border: 0px solid grey;
+  border-radius: 20px;
+  color: #0f172a;
+}
+
+.gradient-border-button:hover {
+  color: rgb(117, 117, 117);
+  background: #d8e4ff;
+  transition: background 0.5s ease;
+  border: 2px solid #ebf1ff;
+  border-radius: 40px;
+}
+.gradient-border-button {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 4px; /* border thickness */
+  border: 2px solid #ebf1ff;
+  border-radius: 40px;
+  background: linear-gradient(
+    to right,
+    #facc15,
+    #06b6d4,
+    #3b82f6
+  ); /* yellow to cyan to blue */
+}
+
+.gradient-border-button span {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 2px 20px;
+  border-radius: 40px;
+  background-color: #ebf1ff; /* inner background */
+  color: #0f172a;
+}
+
+.bi-plus-lg {
+  padding-right: 6px;
+}
+
+/* small screen */
+
+
+/* sub heading */
+.mydropdown {
+  width: 375px;
+  height: 38px;
+  border: 1px solid #002f34;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin: 10px auto;
+}
+.mydropdown a {
+  color: #002f34;
+}
+.bi-geo-alt-fill {
+  margin-right: 8px;
+}
+
+.myinput {
+  width: 500px;
+  height: 38px;
+  border: 1px solid #002f34;
+  border-radius: 5px 0px 0px 5px;
+  margin-top: 20px;
+  margin-right: 0px;
+}
+.myinput-button {
+  width: 150px;
+  height: 38px;
+  border: 1px solid #002f34;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 0px;
+  background-color: #002f34;
+  color: white;
+}
+.mydropdown {
+  margin-top: 20px;
+}
+.myinput-button:hover {
+  background-color: #002f34;
+}
+.bi-search {
+  margin-right: 8px;
+}
+hr {
+  margin-bottom: 2px;
+}
+.myAll {
+  background-color: #ffffff;
+  margin-top: 180px;
+  display: inline-block block;
+}
+.myAll button {
+  color: #002f34;
+  font-weight: bold;
+  border: 0px solid white;
+  background-color: #fff;
+}
+.myAll a {
+  color: #002f34;
+
+  border: 0px solid white;
+  background-color: #fff;
+}
+.myAll button:hover,
+.myAll a:hover {
+  background-color: #fff;
+  color: #002f34;
+  border: 0px solid white;
+}
+.myCarousel {
+  margin: 20px 0px;
+}
+/* cards */
+
+.myCard {
+  width: 100px;
+  height: 160px;
+}
+.myCard img {
+  width: 100px;
+  height: 100px;
+}
+.myCard h5 {
+  font-size: 10px;
+  text-align: center;
+}
