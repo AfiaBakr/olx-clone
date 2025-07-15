@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-/* header */
 .myheader {
   position: fixed;
   top: 0;
@@ -68,28 +67,25 @@
   background-color: #ebf1ff; /* inner background */
   color: #0f172a;
 }
-
 .bi-plus-lg {
   padding-right: 6px;
 }
-
-/* small screen */
-
-
-/* sub heading */
 .mydropdown {
-  width: 375px;
+  /* width: 400px; */
   height: 38px;
   border: 1px solid #002f34;
   border-radius: 5px;
   padding-left: 20px;
+  padding-bottom: 10px;
   margin: 10px auto;
 }
 .mydropdown a {
   color: #002f34;
+  padding-bottom: 5px;
 }
 .bi-geo-alt-fill {
   margin-right: 8px;
+  margin-bottom: 5px;
 }
 
 .myinput {
@@ -120,9 +116,7 @@
 .bi-search {
   margin-right: 8px;
 }
-hr {
-  margin-bottom: 2px;
-}
+
 .myAll {
   background-color: #ffffff;
   margin-top: 180px;
@@ -146,11 +140,20 @@ hr {
   color: #002f34;
   border: 0px solid white;
 }
+hr {
+  margin-bottom: 2px;
+}
 .myCarousel {
   margin: 20px 0px;
 }
 /* cards */
 
+.myAllCArd {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  justify-items: center;
+}
 .myCard {
   width: 100px;
   height: 160px;
@@ -162,4 +165,71 @@ hr {
 .myCard h5 {
   font-size: 10px;
   text-align: center;
+}
+/* more card */
+.myDiv {
+  margin: 20px auto;
+ 
+}
+.myColCard {
+  width: 310px;
+  height: 320px;
+  
+}
+.myColCard img {
+  width: 310px;
+  height: 155px;
+  box-sizing: border-box;
+}
+.myText {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.myText1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.myText2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+/* first footer */
+
+.myFooterColor{
+    background-color: #f2f4f5;
+    
+}
+.myFooterCard{
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    border: 0 solid grey;
+    padding: 30px 0;
+}
+.myFooterCard img{
+    width: 300px;
+    height: 200px;
+}
+.myFooterCardText{
+    margin-top: 50px;
+}
+.h3{
+    color: #3a77ff;
+    
+}
+
+.myFooterbutton{
+    width: 120px;
+    height: 40px;
+    border: 0 solid black;
+    border-radius: 5px;
+    margin-top:70px ;
+}
+.myFooterbutton img{
+    width: 120px;
+    height: 40px;
+    border: 0 solid black;
+    border-radius: 5px;
+   
+    
 }
