@@ -4,7 +4,6 @@
 
 /* ----------  NAVBAR: phone view  ---------- */
 @media only screen and (max-width: 991.98px) {
-
   /* stack nav links vertically and centre them */
   .myNavbar-nav {
     flex-direction: column !important;
@@ -13,15 +12,15 @@
 
   /* give each link some breathing room */
   .myNavbar-nav .myNav-link .myNav-link2 {
-    padding: .4rem 0;
+    padding: 0.4rem 0;
   }
 
   /* centre the form buttons under the links */
   .myNavbar-collapse .myD-flex {
     flex-direction: column;
     align-items: center;
-    gap: .5rem;
-    margin-top: .5rem;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   /* remove the big left‑margin Bootstrap adds on mobile */
@@ -39,15 +38,15 @@
 .myColor {
   background-color: #ebf1ff;
 }
-.myNav-link img{
+.myNav-link img {
   width: 50px;
   height: 24px;
-  margin-right: 5px;   
+  margin-right: 5px;
 }
-.myNav-link2 img{
+.myNav-link2 img {
   width: 34px;
   height: 24px;
-  margin-right: 8px;          
+  margin-right: 8px;
 }
 
 .myBrand {
@@ -77,7 +76,7 @@
   color: rgb(117, 117, 117);
   background: #d8e4ff;
   transition: background 0.5s ease;
-  border: 2px solid #ebf1ff;
+  border: 2px solid linear-gradient(to right, #facc15, #06b6d4, #3b82f6);
   border-radius: 40px;
 }
 .gradient-border-button {
@@ -198,6 +197,11 @@ hr {
   width: 100px;
   height: 160px;
 }
+.myCard:hover {
+  box-shadow: 0 0 5px #002f34, 0 0 20px #81f2ff;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
 .myCard img {
   width: 100px;
   height: 100px;
@@ -209,118 +213,148 @@ hr {
 /* more card */
 .myDiv {
   margin: 40px auto;
-  
- 
+  color: #002f34;
+}
+.myColCard:hover,
+.myColCard2:hover {
+  box-shadow: 0 0 5px #002f34, 0 0 20px #81f2ff;
+  transition: 0.5s;
+  transform: scale(1.03);
+}
+.myDiv a,
+.myDiv h4 {
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #002f34;
 }
 .myColCard {
   width: 100%;
   max-width: 340px;
-  height: 320px;
-  
+  height: 340px;
 }
- .myColCard2{
+.myColCard2 {
   width: 100%;
   max-width: 340px;
-  height: 350px;
- }
-.myColCard img, .myColCard2 img{
+  height: 340px;
+}
+.myColCard img,
+.myColCard2 img {
   width: 100%;
-   aspect-ratio: 4 / 2;
+  aspect-ratio: 4 / 2;
   /* height: 155px; */
   object-fit: cover;
+}
+.myColCard h5,
+.myColCard2 h5 {
+  font-weight: bold;
 }
 .myText {
   font-size: 18px;
   margin-bottom: 5px;
-  color: gray;
+  font-weight: lighter;
 }
 .myText1 {
   font-size: 16px;
   margin-bottom: 5px;
-  color: gray;
+  font-weight: lighter;
 }
 .myText2 {
   font-size: 12px;
   margin-bottom: 5px;
-  color: gray;
+  font-weight: lighter;
 }
-
 
 /* first footer */
 
-.myFooterColor{
-    background-color: #f2f4f5;
-    
+.myFooterColor {
+  background-color: #f2f4f5;
 }
-.myFooterCard{
-    width: 100%;
-    max-width: 400px;
-    height: 200px;
-    background-color: transparent;
-    border: 0 solid grey;
-    padding-top: 30px ;
-    padding-bottom: 0px;
+.myFooterCard {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  background-color: transparent;
+  border: 0 solid grey;
+  padding-top: 30px;
+  padding-bottom: 0px;
 }
-.myFooterCard img{
-    width: 300px;
-    height: 200px;
-    margin-bottom: 0px;
-    }
-.myFooterCardText{
-    margin-top: 50px;
+.myFooterCard img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 0px;
 }
-.h3{
-    color: #3a77ff;
-    
+.myFooterCardText {
+  margin-top: 50px;
+}
+.h3 {
+  color: #3a77ff;
 }
 
-.myFooterbutton{
-    width: 110px;
-    height: 40px;
-    border: 0 solid black;
-    border-radius: 5px;
-    margin-top:70px ;
+.myFooterbutton {
+  width: 110px;
+  height: 40px;
+  border: 0 solid black;
+  border-radius: 5px;
+  margin-top: 70px;
 }
-.myFooterbutton img{
-    width: 110px;
-    height: 40px;
-    border: 0 solid black;
-    border-radius: 5px;
-   
-    
+.myFooterbutton img {
+  width: 110px;
+  height: 40px;
+  border: 0 solid black;
+  border-radius: 5px;
 }
 /* second footer */
 
-.footer-sec{
+.footer-sec {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 60px 0px;
-  
 }
 
-.categories, .trending, .about-us, .olx, .follow-us{
+.categories,
+.trending,
+.about-us,
+.olx,
+.follow-us {
   width: 200px;
-  height: auto;  
+  height: auto;
   color: #002f34;
   text-align: left;
-  
 }
-.categories p, .trending p, .about-us p, .olx p, .follow-us p{
+.categories a,
+.trending a,
+.about-us a,
+.olx a,
+.follow-us a {
   margin: 10px 0px;
   font-size: 16px;
-  
+  color: #002f34;
+  text-decoration: none;
 }
-.categories h4, .trending h4, .about-us h4, .olx h4, .follow-us h4{
+.categories a:hover,
+.trending a:hover,
+.about-us a:hover,
+.olx a:hover,
+.follow-us a:hover,
+.follow-us i:hover {
+  color: #008a99;
+}
+.categories h4,
+.trending h4,
+.about-us h4,
+.olx h4,
+.follow-us h4 {
   font-size: 16px;
   font-weight: bold;
   color: #002f34;
   text-align: left;
   margin: 20px 0px;
 }
-.follow-us i{
+.follow-us i {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -329,55 +363,53 @@ hr {
   background-color: transparent;
   color: #002f34;
   padding-top: 12px;
-  padding-left: 12px; 
+  padding-left: 12px;
   margin-right: 5px;
 }
-.hr{
+.hr {
   color: #002f34;
- 
 }
 /* copy right */
-.myCopyRight{
+.myCopyRight {
   background-color: #002f34;
   color: #ffffff;
   height: 60px;
   padding: 20px 100px;
 }
-.myCopyRight h3{
+.myCopyRight h3 {
   text-align: end;
   font-size: 18px;
-  
 }
 /* back to top */
 
-  
-
-.btt{
+.btt {
   width: 160px;
   height: 40px;
   position: fixed;
   right: 60px;
   bottom: 100px;
-  background-color:#f2f4f5 ;
-   border: 1px solid #002f34;
+  background-color: #f2f4f5;
+  border: 1px solid #002f34;
   border-radius: 40px;
   z-index: 1;
 }
 .btt:hover {
   border: 3px solid #002f34;
-  border-radius: 40px
+  border-radius: 40px;
+  box-shadow: 0 0 5px #002f34, 0 0 20px #81f2ff;
+  transition: 0.5s;
 }
-.bi-caret-up{
+.bi-caret-up {
   margin-right: 10px;
 }
-@media only screen and (max-width:575.98px){   /* <576 px ≈ Bootstrap’s “xs” breakpoint */
-    .btt{
-        bottom:80px;           /* hug the bottom a bit closer           */
-        right:50%;             /* go to horizontal centre …             */
-        transform:translatex(45%); /* … and pull itself back by 50 %     */
+@media only screen and (max-width: 575.98px) {
+  /* <576 px ≈ Bootstrap’s “xs” breakpoint */
+  .btt {
+    bottom: 80px; /* hug the bottom a bit closer           */
+    right: 50%; /* go to horizontal centre …             */
+    transform: translatex(45%); /* … and pull itself back by 50 %     */
 
-        width:auto;            /* shrink to content                     */
-        padding:0 22px;        /* extra padding so it still looks nice  */
-    }
+    width: auto; /* shrink to content                     */
+    padding: 0 22px; /* extra padding so it still looks nice  */
+  }
 }
-
